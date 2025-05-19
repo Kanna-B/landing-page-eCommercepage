@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase - Your Ultimate Store</title>
+    <style>
+      /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+/* Header & Navigation */
+header {
+    background: #333;
+    color: white;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero Section */
+#hero {
+    background: url("hero.jpg") no-repeat center center/cover;
+    color: white;
+    padding: 100px;
+}
+
+button {
+    background: #ff9500;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e08b00;
+}
+
+/* Promotional Banner */
+#promo {
+    background: #ff5733;
+    color: white;
+    padding: 50px;
+}
+
+/* Featured Products */
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100px;
+    height: auto;
+}
+
+.product-card button {
+    margin-top: 10px;
+}
+
+/* Contact Section */
+form input, form textarea {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 10px;
+    position: flex;
+    bottom: 0;
+    width: 100%;
+    margin-top: 10px;
+}
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .product-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #hero {
+        padding: 50px;
+    }
+
+    #promo {
+        padding: 30px;
+    }
+
+    form input, form textarea {
+        width: 90%;
+    }
+}
+/* Hover Effects */
+button:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+/* Product Images */
+.product-card img {
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+/* Logo Styling */
+#logo {
+    width: 120px;
+    height: auto;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <img src="e-commerce-logo-with-pointer-and-shopping-bag-free-vector.jpg" alt="ShopEase" id="logo">
+        <h1>ShopEase</h1>
+        <nav>
+            <ul>
+                <li><a href="#products">Featured Products</a></li>
+                <li><a href="#promo">Exclusive Deals</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h2>Unbeatable Deals, Just for You</h2>
+        <p>Discover the best products at incredible prices. Shop now!</p>
+        <button>Shop Now</button>
+    </section>
+
+    <!-- Promotional Banner -->
+    <section id="promo">
+        <h2>Limited-Time Offer: 50% Off!</h2>
+        <p>Grab your favorite items before the sale ends!</p>
+        <button>Explore Deals</button>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="product1.avif" alt="Product 1">
+                <h3>Sport shoes</h3>
+                <p>$99.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="product2.avif" alt="Product 2">
+                <h3>Face creams</h3>
+                <p>$49.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="product3.avif" alt="Product 3">
+                <h3>Smart Watch</h3>
+                <p>$39.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 ShopEase - The Best Online Shopping Experience</p>
+    </footer>
+
+</body>
+</html>
